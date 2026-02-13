@@ -1,0 +1,95 @@
+.section {
+    padding: 128px 24px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 80px;
+    align-items: center;
+}
+
+@media (max-width: 968px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+}
+
+.imageSide {
+    position: relative;
+}
+
+.imageGlass {
+    position: relative;
+    border-radius: 32px;
+    overflow: hidden;
+    aspect-ratio: 4/5;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.profileImg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: grayscale(100%);
+    transition: filter 0.5s ease;
+}
+
+.profileImg:hover {
+    filter: grayscale(0%);
+}
+
+.textSide {
+    display: flex;
+    flex-direction: column;
+}
+
+.label {
+    color: var(--primary);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 14px;
+    margin-bottom: 24px;
+}
+
+.title {
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    font-weight: 900;
+    margin-bottom: 32px;
+    line-height: 1.2;
+}
+
+.desc {
+    color: rgba(255, 255, 255, 0.6);
+    line-height: 1.8;
+    margin-bottom: 24px;
+    font-size: 18px;
+}
+
+.stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+    margin-top: 40px;
+}
+
+.statItem {
+    display: flex;
+    flex-direction: column;
+}
+
+.statNumber {
+    font-size: 32px;
+    font-weight: 900;
+    color: var(--primary);
+}
+
+.statLabel {
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.4);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}

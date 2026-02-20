@@ -62,10 +62,10 @@ const OTHER_PROJECTS = [
         link: "https://www.permieragile.com/",
     },
     {
-        title: "Agilemania",
+        title: "ISSS Online",
         category: "Yii2 / MySQL",
         description: "Skill development platform for agile methodologies with interactive learning modules.",
-        link: "https://agilemania.com/",
+        link: "https://isssonline.demo-nexevo.in/",
     },
     {
         title: "Mexerv Enterprise CRM",
